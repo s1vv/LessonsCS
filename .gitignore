@@ -1,0 +1,36 @@
+# Visual Studio temporary files
+*.suo
+*.user
+*.sln.docstates
+*.tmp
+*.log
+*.obj
+*.cache
+
+# Visual Studio 2015+
+**/bin/**
+**/obj/**
+
+# User-specific files
+*.suo
+*.user
+*.sln.docstates
+
+# Build outputs
+**/bin/**
+**/obj/**
+
+# Dependency caches
+**/packages/**
+
+# Local application data
+**/Properties/launchSettings.json
+
+# Test Results
+**/TestResults/**
+
+# Rider specific
+*.idea
+.idea
+*.iml
+*.iws
