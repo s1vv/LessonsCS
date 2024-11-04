@@ -12,12 +12,12 @@ namespace Lesson2ConvertApp
         {
             Console.WriteLine("Введите число");
             string? str = Console.ReadLine();
-            ConverterStrToInt convertStrToInt = new();
+            ConverterStrToNum converterStrToNum = new();
             
             try
             {
-                int num = convertStrToInt.Converter(str);
-                Console.WriteLine($"Введенное значение {num} преобразовано в тип {num.GetType()}");
+                var numInt = converterStrToNum.ConverterStrToInt(str);
+                Console.WriteLine($"Введенное значение {numInt} преобразовано в тип {numInt.GetType()}");
             }
             catch (FormatException)
             {
@@ -27,6 +27,12 @@ namespace Lesson2ConvertApp
             {
                 Console.WriteLine($"Ошибка: {e}");
             }
+
+            Console.WriteLine("Введите число");
+            str = Console.ReadLine();
+            var numDouble = ConverterStrToNum.ConverterStrToDouble(str);
+            Console.WriteLine(Math.Round(numDouble, 2));
+
         }
     }
 }

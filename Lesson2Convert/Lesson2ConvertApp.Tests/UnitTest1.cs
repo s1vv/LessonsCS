@@ -1,10 +1,16 @@
-namespace Lesson2ConvertApp.Tests;
+using Lesson2ConvertApp;
 
-public class UnitTest1
+namespace Lesson2ConvertApp.Tests
 {
-    [Fact]
-    public void Test1()
+    public class UnitTest1
     {
-
+        [Fact]
+        public void Test1()
+        {
+            var converterStrToInt = new ConverterStrToInt();
+            int result = converterStrToInt.Converter("0");
+            Assert.Equal(0, result);
+        }
     }
+
 }
