@@ -1,5 +1,3 @@
-using Lesson1App;
-
 namespace Lesson1App.Tests
 {
     public class UnitTest1
